@@ -60,15 +60,15 @@ while Temp_var:
             print("These are the wrong credentials! SORRY")
 
     elif inp ==3:
-        new_email = input("Enter the new Email:")
+        new_email = input("Enter the Email:")
         if new_email in user.login_info.keys():
             print("Email Already Registered..")
         else:
             print("Enter your Details....")
-            new_name = input("Enter new name:")
-            new_phone_no = int(input("Enter new number:"))
-            new_address = input("Enter new address:")
-            new_password = input("Enter new password:")
+            new_name = input("Enter the name:")
+            new_phone_no = int(input("Enter the number:"))
+            new_address = input("Enter the address:")
+            new_password = input("Enter the password:")
             user = Customer (new_email,new_name,new_phone_no,new_address,new_password)
             print("Registered successfully")
             print("Now you  can login....")
